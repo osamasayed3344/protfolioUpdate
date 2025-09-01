@@ -1,0 +1,25 @@
+@import "./Header/header.css";
+@import "./Footer/footer.css";
+@import "./Slider/slider.css";
+@import "./About/about.css";
+
+:root{
+    --darkblue:rgb(8, 42, 104);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--darkblue);
+}
+::-webkit-scrollbar{
+    background-color: var(--darkblue);
+    width: 0.2rem;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 5px;
+}

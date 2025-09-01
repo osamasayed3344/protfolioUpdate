@@ -1,0 +1,90 @@
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.9rem 0;
+    border-bottom: 1px dotted gray;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 10;
+    color: white;
+    font-size: 1rem;
+    font-weight: bolder;
+    font-family: sans-serif;
+    background-color: var(--darkblue);
+}
+header .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem; 
+}
+header .left h3{
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bolder;
+}
+header .right a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+header .left h3:hover,header .right a:hover{
+    color: rgb(156, 14, 14);
+}
+
+@media screen and (max-width:1024px)
+{
+    header{
+        justify-content: space-between;
+        font-size: 0.8rem;
+        padding: 1rem;
+    }
+    header .right button{
+        outline: none;
+        border: none;
+        background:none;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: bolder;
+        font-family: sans-serif;
+        cursor: pointer;
+    }
+    .navbarslider{
+        padding: 1rem 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        background-color: var(--darkblue);
+    }
+    .navbarslider .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.2rem;
+    }
+    .navbarslider .right a{
+        color: white;
+        font-size: 1rem;
+        font-weight: bolder;
+        font-family: sans-serif;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    .navbarslider .right a:hover{
+        color: rgb(156, 14, 14);
+    }
+
+    @keyframes myslider {
+        0%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+}
