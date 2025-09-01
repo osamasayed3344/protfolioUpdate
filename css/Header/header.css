@@ -54,7 +54,7 @@ header .left h3:hover,header .right a:hover{
     }
     .navbarslider{
         padding: 1rem 0;
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
         z-index: 9;

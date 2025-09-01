@@ -3,7 +3,7 @@ export function RightHeader()
     let right=document.createElement("div");
     right.className="right";
     let navs=[
-        {text:"Home",href:"/"},
+        {text:"Home",href:"#"},
         {text:"About",href:"#about"},
         {text:"Skills",href:"#skills"},
         {text:"Project",href:"#project"},
