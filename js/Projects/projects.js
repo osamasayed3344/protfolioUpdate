@@ -20,6 +20,9 @@ export function Projects()
         img.src=project.icon;
         let p=document.createElement("p");
         p.innerHTML=project.name;
+        container.onclick=function(){
+            window.location.href=project.link;
+        }
         container.ontouchstart=function(){
             p.style.transition="all 2s";
             p.style.opacity=1;
