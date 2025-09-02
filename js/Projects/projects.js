@@ -25,7 +25,7 @@ export function Projects()
             p.style.opacity=1;
             p.style.top="50%";
         };
-        container.ontouchend=function(){
+        container.onmouseout=function(){
             p.style.transition="all 2s";
             p.style.opacity=0;
             p.style.top="100%";
