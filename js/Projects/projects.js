@@ -23,7 +23,7 @@ export function Projects()
         container.onclick=function(){
             window.location.href=project.link;
         }
-        container.onmouseover=function(){
+        container.ontouchstart=function(){
             p.style.transition="all 2s";
             p.style.opacity=1;
             p.style.top="50%";
