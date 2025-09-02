@@ -20,7 +20,7 @@ export function Projects()
         img.src=project.icon;
         let p=document.createElement("p");
         p.innerHTML=project.name;
-        container.ontouchstart=function(){
+        container.ontouchmove=function(){
             p.style.transition="all 2s";
             p.style.opacity=1;
             p.style.top="50%";
