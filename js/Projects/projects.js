@@ -20,15 +20,15 @@ export function Projects()
         img.src=project.icon;
         let p=document.createElement("p");
         p.innerHTML=project.name;
-        container.onclick=function(){
+        /*container.onclick=function(){
             window.location.href=project.link;
-        }
+        }*/
         container.ontouchstart=function(){
             p.style.transition="all 2s";
             p.style.opacity=1;
             p.style.top="50%";
         };
-        container.onmouseout=function(){
+        container.ontouchend=function(){
             p.style.transition="all 2s";
             p.style.opacity=0;
             p.style.top="100%";
